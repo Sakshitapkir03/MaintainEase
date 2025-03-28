@@ -46,6 +46,8 @@ Firebase Hosting (Backend Functions)
 
 **📂 Folder Structure**
 
+<pre>
+```bash
 home-maintenance-5/
 ├── my-app/
 │   ├── node_modules/
@@ -57,7 +59,7 @@ home-maintenance-5/
 │       ├── Chat.js
 │       ├── index.js
 │       ├── index.css
-│       ├── signup.js
+│       └── signup.js
 ├── .env
 ├── extra.py
 ├── main.py
@@ -65,7 +67,10 @@ home-maintenance-5/
 ├── venv/
 ├── .gitignore
 ├── package.json
-├── package-lock.json
+└── package-lock.json
+```
+</pre>
+
 
 **🛡️ Security & Auth**
 
