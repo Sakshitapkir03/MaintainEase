@@ -46,6 +46,27 @@ Firebase Hosting (Backend Functions)
 
 **📂 Folder Structure**
 
+home-maintenance-5/
+├── my-app/
+│   ├── node_modules/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── __pycache__/
+│       ├── App.js
+│       ├── Chat.js
+│       ├── index.js
+│       ├── index.css
+│       ├── signup.js
+├── .env
+├── extra.py
+├── main.py
+├── server.js
+├── venv/
+├── .gitignore
+├── package.json
+├── package-lock.json
+
 **🛡️ Security & Auth**
 
 Firebase Authentication for secure sign-in and role-based routing
