@@ -1,0 +1,432 @@
+.google-button {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .Ldiv1 {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .div2 {
+    max-width: 28rem;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .div3 {
+    text-align: center;
+  }
+  
+  .div4 {
+    margin-top: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .div5 {
+    margin-top: 1.5rem;
+  }
+  
+  .div6 {
+    position: relative;
+  }
+  
+  .div7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .div8 {
+    width: 100%;
+    border-top-width: 1px;
+    border-color: #d1d5db;
+  }
+  
+  .div9 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .div10 {
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    background-color: #ffffff;
+    color: #6b7280;
+  }
+  
+  .div11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .div12 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-top: 20px;
+  }
+  
+  .div13 {
+    font-weight: 500;
+    color: #4f46e5;
+    transition: color 0.2s;
+  }
+  .div13:hover {
+    color: #6366f1;
+  }
+  
+  .div14 {
+    width: 87%;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    background-color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #6b7280;
+    transition: background-color 0.2s;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5), 0 0 0 4px #ffffff;
+    margin-left: -5px;
+  }
+  .div14:hover {
+    background-color: #f9fafb;
+    border: none;
+  }
+  
+  .div15 {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .div16 {
+    margin-left: 0.5rem;
+  }
+  
+  .div17 {
+    margin-top: 1.5rem;
+  }
+  
+  .div18 {
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-top: 1rem;
+  }
+  
+  .div19 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .div20 {
+    position: relative;
+  }
+  
+  .div21 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .div22 {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #d1d5db;
+  }
+  
+  .div23 {
+    appearance: none;
+    border-radius: 0.5rem;
+    position: relative;
+    display: block;
+    width: 71%;
+    padding: 0.75rem 3rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    z-index: 10;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #111827;
+    outline: none;
+    transition: box-shadow 0.2s;
+  }
+  .div23::placeholder {
+    color: #6b7280;
+  }
+  .div23:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+    border-color: #6366f1;
+  }
+  
+  .div24 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .div25 {
+    appearance: none;
+    border-radius: 0.5rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-width: 1px;
+    border-color: #d1d5db;
+    background-color: #f9f9f9;
+    z-index: 10;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #111827;
+    outline: none;
+    transition: box-shadow 0.2s;
+    margin-top: 27px;
+  }
+  .div25::placeholder {
+    color: #6b7280;
+  }
+  .div25:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+    border-color: #6366f1;
+  }
+  
+  .div26 {
+    width: 43%;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border-width: 1px;
+    border-color: transparent;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: #4f46e5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5), 0 0 0 4px #ffffff;
+    transition: background-color 0.2s;
+    margin-top: 27px;
+    margin-left: 116px;
+  }
+  .div26:hover {
+    background-color: #4338ca;
+  }
+  .div26:disabled {
+    opacity: 0.5;
+  }
+  
+  .forgot-password {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .forgot-password h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .reset-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .reset-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .reset-button:disabled:hover {
+    background-color: #ddd;
+  }
+  
+  .forgot-password p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forgot-password p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password p a:hover {
+    text-decoration: underline;
+  }
+  
+.email {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.eb {
+  width: 87%;
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #6b7280;
+  transition: background-color 0.2s;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5), 0 0 0 4px #ffffff;
+  margin-left: 236px;
+  margin-top: -45px;
+  position: relative;
+  top: -23px;
+}
+
+.eb:hover {
+  background-color: #f9fafb;
+  border: none;
+}
+
+.email-signup {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.email-signup h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.email-signup .email-input,
+.email-signup .password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.email-signup .email-input:focus,
+.email-signup .password-input:focus {
+  border-color: #007bff;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.signup-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.email-signup .error-message {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.email-signup .success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 10px;
+}

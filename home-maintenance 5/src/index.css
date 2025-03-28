@@ -1,0 +1,974 @@
+/* General styling */
+/* body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+} */
+
+/* App container */
+.app {
+  /* position: relative; */
+  min-height: 100vh;
+  /* overflow: hidden; Prevent overflow */
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Background blur */
+.app::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/public/Background.jpeg') no-repeat center center fixed; /* Ensure this path is correct */
+  background-size: cover;
+  filter: blur(10px); /* Adjust blur intensity here */
+  z-index: 1; /* Behind other content */
+}
+
+/* Foreground content */
+.content {
+  position: relative;
+  flex: 1;
+  z-index: 2; /* Ensure content is above the blurred background */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Make sure content takes full height */
+}
+
+/* Navbar styling */
+/* Navbar styling */
+/* Navbar styling */
+/* General styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  /* height: auto; */
+  /* background-color: rgba(52, 58, 64, 0.9); */
+   /* Dark semi-transparent background */
+  /* color: white; */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keep it above other content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the navbar content */
+  padding: 10px 20px; /* Padding inside the navbar */
+}
+
+.navbar-nav {
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Space out the links */
+  width: 100%; /* Take full width of the navbar */
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.nav-item {
+  margin: 0 15px; /* Add horizontal space between the links */
+  /* color: white; */
+}
+
+/* Navbar link styling */
+.nav-link {
+  /* color: white; */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-link:hover {
+  color: orange !important; /* Optional: Changes text to light gray on hover */
+  text-decoration: underline; /* Optional: Adds underline on hover */
+}
+.navbar-link {
+  color: white !important; /* Makes the text white */
+  text-decoration: none; /* Removes underline from links */
+}
+/* Sticky navbar */
+/* .sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+} */
+
+/* Navbar toggler */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+/* For mobile view, make sure navbar is collapsible */
+/* @media (max-width: 768px) {
+  .navbar-nav { */
+    /* flex-direction: column;  */
+    /* Stack links vertically on mobile */
+    /* gap: 10px;  */
+    /* Add some space between links */
+  /* }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse { */
+    /* justify-content: flex-start;  */
+    /* Align the toggler and links */
+  /* }
+} */
+
+
+
+/* .collapse navbar-collapse{
+  gap: 20px;
+} */
+
+/* Body adjustments */
+
+
+/* Contact Form */
+/* Contact Info Section */
+/* Contact Form */
+.row{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+  padding: 20px; /* Spacing around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin-bottom: 20px; /* Center the section */
+  max-width: 600px; /* Limit max width */
+  display: flex; /* Enable flexbox for alignment */
+   /* Stack elements vertically */
+  /* Center elements horizontally */
+  
+}
+
+/* Contact Info Section */
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+  padding: 20px; /* Spacing around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 20px auto; /* Center the section */
+  max-width: 600px; /* Limit max width */
+   /* Use flexbox for alignment */
+   /* Center items vertically */
+}
+
+/* Style adjustments for contact info text */
+.contact-info p {
+  margin-left: 15px; /* Add some space to the left */
+  font-size: 1.2rem; /* Increase font size for emphasis */
+  color: #343a40; /* Dark text color */
+}
+
+
+/* Title style for Contact Info */
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.contact-info p {
+  text-align: center; /* Center align text */
+}
+
+/* Button styles */
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.col-md-6:hover{
+  transform: scale(1.05); /* Magnify the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.row1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+/* Footer styling */
+footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: white;
+  padding: 20px; /* Consistent padding */
+  text-align: center;
+  /* margin-top: 30px; Space above footer */
+  /* margin-bottom: 10px; */
+  /* position: relative; */
+   /* Ensure positioning */
+  width: 100%; /* Full width */
+  z-index: 2; /* On top of background */
+  margin-top: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: white;
+  padding: 20px; /* Consistent padding */
+  text-align: center;
+  /* position: fixed; */
+  margin-bottom: 0; /* Position at the bottom */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 2; /* On top of background */
+  margin-top: auto;
+}
+
+/* Additional styles for the footer links */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Login overlay and box */
+/* Login overlay and box */
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Light overlay */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 10; /* Ensure it’s above the blurred background */
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%; /* Full width */
+  text-align: center;
+}
+
+/* Login box title */
+.login-box h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Login box input styles */
+.login-box .form-control {
+  margin-bottom: 15px;
+}
+
+/* Login button styles */
+.login-box .btn {
+  background-color: #007bff;
+  border: none;
+  width: 100%; /* Full width button */
+}
+
+
+
+/* Header.css */
+
+/* Header.css */
+
+/* Header styling */
+/* .header { */
+  /*padding: 20px; /* Space around the header */
+  /*text-align: center; /* Center the title */
+  /*background-color: #f8f9fa; /* Light background color for header */
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* } */
+
+/* .header h1 { */
+  /*margin: 0; /* Remove default margin */
+  /*color: #343a40; /* Dark text color */
+  /*font-size: 2.5rem; /* Font size for the title */
+  /*font-weight: 600; /* Semi-bold weight */
+/* } */
+.header-container {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Padding around the header */
+  background-color: #343a40; /* Dark background */
+  color: white; /* Text color */
+}
+
+.logo-container {
+  flex: 0 0 auto; /* Prevent flex-grow to keep logo size */
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between logo and text */
+}
+
+.header-details {
+  flex: 1; /* Allow details to take available space */
+}
+
+.header-title {
+  margin: 0; /* Remove default margin */
+  font-size: 1.8rem; /* Title size */
+}
+
+.header-description {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Description size */
+}
+
+/* Navbar adjustments */
+/* .navbar {
+  margin-top: 0px; */
+   /* Space between header and navbar */
+  /* height: 60px;
+  gap: 20px;
+} */
+
+/* Optional responsive adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+}
+
+/* Container for the contact form */
+.container {
+  max-width: 800px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Flexbox adjustments for the row */
+.row {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center children */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+
+
+
+
+/* Service grid container */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns in each row */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px;
+}
+
+/* Individual service card for grid layout */
+.service-card-grid {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center-align text */
+}
+
+/* Hover effect for service cards */
+.service-card-grid:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  border-color: #007bff; /* Highlight border */
+}
+
+/* Service card title */
+.service-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* Images inside the service card */
+.service-card-grid img {
+  max-width: 100%; /* Responsive image size */
+  height: 150px; /* Fixed height for consistency */
+  object-fit: cover; /* Crop image if needed */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.service-card-grid p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* List inside the service card */
+.service-card-grid ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Hyperlinks inside service cards */
+.service-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Links inside the service card */
+.service-card-grid ul li a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.service-card-grid ul li a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* Single column on mobile screens */
+  }
+}
+
+
+
+/* Container styling */
+.service-details-container {
+  max-width: 900px; /* Slightly wider for better layout */
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Image styling */
+.service-details-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow to the image */
+}
+
+/* Title styling */
+.service-details-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Description styling */
+.service-details-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444; /* Slightly darker for better readability */
+  margin-bottom: 20px;
+  text-align: justify; /* Align text for a neat paragraph look */
+}
+
+/* Why Choose Us section */
+.why-choose-us,
+.common-issues {
+  margin-bottom: 30px;
+  text-align: left; /* Left-align content for sections */
+}
+
+.why-choose-us h3,
+.common-issues h3 {
+  font-size: 1.8rem;
+  color: #0056b3; /* Darker blue for subheadings */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff; /* Add a small underline */
+  padding-bottom: 5px;
+}
+
+.why-choose-us ul,
+.common-issues ul {
+  list-style-type: disc;
+  margin-left: 20px; /* Add left indentation */
+  color: #555;
+}
+
+.why-choose-us li,
+.common-issues li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.service-details-container .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-details-container .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Add a hover lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Responsive design for medium screens */
+@media (max-width: 1024px) {
+  .service-details-container {
+    padding: 20px;
+  }
+
+  .service-details-container h2 {
+    font-size: 2rem;
+  }
+
+  .service-details-container p {
+    font-size: 1.1rem;
+  }
+
+  .why-choose-us h3,
+  .common-issues h3 {
+    font-size: 1.6rem;
+  }
+
+  .why-choose-us li,
+  .common-issues li {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .service-details-container {
+    padding: 15px;
+  }
+
+  .service-details-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-details-container p {
+    font-size: 1rem;
+  }
+
+  .service-details-container .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .why-choose-us h3,
+  .common-issues h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .service-details-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-details-container p {
+    font-size: 0.9rem;
+  }
+
+  .service-details-container .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .why-choose-us h3,
+  .common-issues h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+.banner h1{
+  text-align: center;
+}
+/* Footer */
+footer {
+  margin-top: 20px; /* Space above footer */
+}
+/* Sign Up Box */
+.signup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.signup-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%; /* Full width */
+  text-align: center;
+}
+
+/* Sign Up Box Title */
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Form Control Styling */
+.signup-box .form-control {
+  margin-bottom: 15px;
+}
+
+/* Sign Up Button Styling */
+.signup-box .btn {
+  background-color: #007bff;
+  border: none;
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.signup-box .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional link styling */
+.signup-box .text-muted {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.faq-container {
+  width: 80%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.faq-question {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.faq-answer {
+  font-size: 1em;
+  color: #555;
+}
+
+.about-us-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-us-container h1 {
+  color: #2b7a78;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-us-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-us-container h2 {
+  color: #3aafa9;
+  margin-top: 20px;
+}
+
+.about-us-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us-container li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+/* General Styling for RequestEstimate.js */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 0;
+}
+
+.request-estimate {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Updated Radio Group Styling */
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adds spacing between Yes and No options */
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Adds spacing between the radio button and its label */
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Hide Cost Amount in Radio Button Options */
+.radio-group label span {
+  display: none; /* Ensures the cost amount (e.g., "(+$30)") is not displayed */
+}
+
+.request-estimate input[type="radio"] {
+  accent-color: #007bff;
+  margin: 0;
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.request-estimate input[type="checkbox"] {
+  margin: 0;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+.react-datepicker-wrapper input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Problem Description Container */
+.problem-description-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensures Consistency Across Forms */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Clean and Uniform Radio Button Styling */
+.radio-group input[type="radio"] {
+  accent-color: #007bff;
+}
+
+/* Adjustments for Larger Screens */
+@media (min-width: 1024px) {
+  .request-estimate {
+    max-width: 800px;
+    padding: 30px;
+  }
+}
